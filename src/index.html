@@ -8,14 +8,29 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <section>
-    <form action="GET" method="get">
-      <label for="search"></label>
-      <input type="search" name="search" id="search" placeholder="Search images...">
-      <button type="submit">Search</button>
-    </form>
-    <span class="loader"></span>
-  </section>
+    <section class="container">
+      <form action="GET" method="get" id="form">
+        <label for="search">
+          <input
+            type="search"
+            name="search"
+            id="search"
+            placeholder="Search images..."
+          />
+        </label>
+        <button type="submit" class="submit-btn">Search</button>
+      </form>
+      <span class="loader"></span>
+    </section>
+    <ul class="gallery"></ul>
+    <div class="gallery">
+      <a href="images/image1.jpg"
+        ><img src="images/thumbs/thumb1.jpg" alt="" title=""
+      /></a>
+      <a href="images/image2.jpg"
+        ><img src="images/thumbs/thumb2.jpg" alt="" title="Beautiful Image"
+      /></a>
+    </div>
     <script type="module" src="./js/form.js"></script>
   </body>
 </html>
